@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        
+        nav {
+            background-color: #0d224c; 
+            padding: 12px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .hero {
+            width: 90%;
+            margin: 30px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.55; 
+        }
+
+    
+        .hero-text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #0d224c;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgb(40, 40, 40);
+        }
+
+        .hero-text a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #0d224c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .hero-text a:hover {
+            background-color: #091938;
+        }
+
+        .main-footer {
+  background-color: #0d224c;
+  color: white;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #aaa;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MyShop</div>
+
+        <ul>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="topsellers.html">Top Sellers</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="hero">
+    
+        <img src="home.jpg" alt="Hero Image">
+
+    
+        <div class="hero-text">
+            <h1>Timeless Elegance, Modern Precision</h1>
+            <p>Discover the finest collection of watches, designed for every moment</p>
+
+        
+            <a href="topsellers.html">Shop Best Sellers</a>
+        </div>
+    </div>
+
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>At TimeAura, we believe a watch is more than an accessory .it’s a statement. We offer a curated collection of stylish, reliable, and affordable timepieces designed for everyday wear. Our goal is to bring modern, high-quality watches to everyone who values both style and precision. We keep things simple: great designs, trusted quality, and customer-first service.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email:   timeaura@gmail.com</p>
+      <p>Phone:  +92 333 0000000</p>
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
