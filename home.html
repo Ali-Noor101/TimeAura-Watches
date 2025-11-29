@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyShop - Home</title>
+    <title>TimeAura - Home</title>
 
     <style>
         * {
@@ -147,6 +147,61 @@
 }
 
 
+.products-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.products-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #0d224c;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #0d224c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-card button:hover {
+    background-color: #091938;
+}
+
 
 
     </style>
@@ -155,11 +210,11 @@
 <body>
 
     <nav>
-        <div class="logo">MyShop</div>
+        <div class="logo">TimeAura Watches</div>
 
         <ul>
             <li><a href="cart.html">Cart</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="topsellers.html">Top Sellers</a></li>
             <li><a href="login.html">Login</a></li>
@@ -180,6 +235,53 @@
             <a href="topsellers.html">Shop Best Sellers</a>
         </div>
     </div>
+
+  
+<div class="products-section">
+
+    <h2 class="products-title">Our Featured Watches</h2>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="watch1.jpg" alt="Women's Luxury Crystal Watch">
+            <h3>Women's Luxury Crystal Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="watch2.jpg" alt="Black Leather Strap Watch">
+            <h3>Black Leather Strap Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="watch3.jpg" alt="Gold Bracelet Watch">
+            <h3>Gold Bracelet Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="watch4.jpg" alt="Women's Oval Dial Watch">
+            <h3>Women's Oval Dial Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="watch5.jpg" alt="Men's Silver Watch">
+            <h3>Men's Silver Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="watch6.jpg" alt="Brown Vintage Watch">
+            <h3>Brown Vintage Watch</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
 
 <footer class="main-footer">
   <div class="footer-content">
