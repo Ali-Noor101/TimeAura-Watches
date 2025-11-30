@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="Css/payment.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">TimeAura Watches</div>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="topsellers.html">Top Sellers</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <h2 class="pageTitle">Check Out</h2>
+            <div class="checkout">
+                <div class="checkoutForms">
+                    <section class="formSection">
+                        <h3 class="sectionTitle">Shipping Address</h3>
+                        <div class="form">
+                            <label>Name</label>
+                            <input type="text" class="formInput" placeholder="Enter your Name">
+                        </div>
+                        <div class="form">
+                            <label>Address</label>
+                            <input type="text" class="formInput" placeholder="Enter your Address">
+                        </div>
+                        <div class="form">
+                            <label>City</label>
+                            <input type="text" class="formInput" placeholder="Enter your City">
+                        </div>
+                    </section>
+                    <section class="formSection">
+                        <h3 class="sectionTitle">Payment</h3>
+                        <div class="form">
+                            <label>Card Number</label>
+                            <input type="text" class="formInput" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="form">
+                            <label>Expiry Date</label>
+                            <input type="text" class="formInput" placeholder="MM/YY">
+                        </div>
+                        <div class="form">
+                            <label>CVC</label>
+                            <input type="text" class="formInput" placeholder="123">
+                        </div>
+                    </section>
+
+                </div>
+
+                <aside class="orderSummary">
+                    <h3 class="sectionTitle">Order Summary</h3>
+
+                    <div class="item">
+                        <span>Men's Classic</span>
+                        <span>2499 PKR</span>
+                    </div>
+                    <div class="item">
+                        <span>Brown Vintage</span>
+                        <span>2499 PKR</span>
+                    </div>
+                    <div class="item">
+                        <span>Men's Green</span>
+                        <span>2499 PKR</span>
+                    </div>
+
+                    <div class="orderTotal">
+                        <span class="totalLabel">Total:</span>
+                        <span class="totalAmount">7497 PKR</span>
+                    </div>
+
+                    <button class="placeOrder" onclick="placeOrder()">Place Order</button>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>At TimeAura, we believe a watch is more than an accessory .it’s a statement. We offer a curated
+                    collection of
+                    stylish, reliable, and affordable timepieces designed for everyday wear. Our goal is to bring
+                    modern,
+                    high-quality watches to everyone who values both style and precision. We keep things simple: great
+                    designs,
+                    trusted quality, and customer-first service.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: timeaura@gmail.com</p>
+                <p>Phone: +92 333 0000000</p>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function placeOrder() {
+            alert('Thank you for your purchase');
+            console.log('Order has been placed successfully!');
+            window.location.href = 'home.html';
+        }
+    </script>
+
+</body>
+
+</html>
