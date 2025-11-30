@@ -147,11 +147,15 @@
 <script>
   function increaseQty(input) {
     input.value = Number(input.value) + 1;
+    console.log("Quantity increased to:", input.value);
   }
 
   function decreaseQty(input) {
     if (Number(input.value) > 1) {
       input.value = Number(input.value) - 1;
+      console.log("Quantity decreased to:", input.value);
+    }else{
+      console.log("Quantity cannot be less than 1");
     }
   }
 </script>
