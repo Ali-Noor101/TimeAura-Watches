@@ -1,296 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeAura - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeAura - Home</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        
-        nav {
-            background-color: #0d224c; 
-            padding: 12px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        nav .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        
-        .hero {
-            width: 90%;
-            margin: 30px auto;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            display: block;
-            opacity: 0.55; 
-        }
-
-    
-        .hero-text {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #0d224c;
-        }
-
-        .hero-text h1 {
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        .hero-text p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: rgb(40, 40, 40);
-        }
-
-        .hero-text a {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #0d224c;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        .hero-text a:hover {
-            background-color: #091938;
-        }
-
-        .main-footer {
-  background-color: #0d224c;
-  color: white;
-  padding: 40px 0;
-  margin-top: 40px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.footer-content {
-  width: 85%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-section {
-  width: 30%;
-  min-width: 200px;
-  margin-bottom: 20px;
-}
-
-.footer-section h3 {
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
-}
-
-.footer-section ul li a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-.footer-section ul li a:hover {
-  color: #aaa;
-}
-
-
-.products-section {
-    width: 90%;
-    margin: 40px auto;
-}
-
-.products-title {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #0d224c;
-    font-weight: bold;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background: white;
-    border-radius: 18px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.product-card h3 {
-    margin: 12px 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.product-card button {
-    padding: 10px 20px;
-    background-color: #0d224c;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.product-card button:hover {
-    background-color: #091938;
+body{
+ font-family: Arial, sans-serif;
+ background-color:#f0f0f0;
 }
 
 
 
-    </style>
+
+nav{
+background-color:#0d224c;
+padding:12px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+nav .brandname{
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav ul li a:hover{
+text-decoration:underline;
+}
+
+
+
+
+.heroBox {
+ width:90%;
+ margin:30px auto;
+ border-radius:20px;
+ overflow:hidden;
+ position:relative;
+}
+
+.heroBox img{
+ width:100%;
+ display:block;
+ opacity:0.55;
+}
+
+
+
+.textOnImg{
+ position:absolute;
+ top:45%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ text-align:center;
+ color:#0d224c;
+}
+
+.textOnImg h1{
+ font-size:40px;
+ font-weight:bold;
+}
+
+.textOnImg p{
+ margin-top:10px;
+ font-size:16px;
+ color:rgb(40,40,40);
+}
+
+.textOnImg a{
+ display:inline-block;
+ margin-top:25px;
+ padding:12px 25px;
+ background-color:#0d224c;
+ color:white;
+ text-decoration:none;
+ border-radius:25px;
+ font-size:15px;
+ font-weight:bold;
+}
+
+.textOnImg a:hover{
+ background-color:#091938;
+}
+
+
+
+
+
+.footerArea{
+ background-color:#0d224c;
+ color:white;
+ padding:40px 0;
+ margin-top:40px;
+}
+
+.footWrap{
+ width:85%;
+ margin:auto;
+ display:flex;
+ justify-content:space-between;
+ flex-wrap:wrap;
+}
+
+.footPart{
+ width:30%;
+ min-width:200px;
+ margin-bottom:20px;
+}
+
+.footPart h3{
+ margin-bottom:15px;
+ font-size:18px;
+}
+
+.footPart ul{
+ list-style:none;
+ padding:0;
+}
+
+.footPart ul li{
+ margin-bottom:8px;
+}
+
+.footPart ul li a{
+ text-decoration:none;
+ color:white;
+ transition:.3s;
+}
+
+.footPart ul li a:hover{
+ color:#aaa;
+}
+
+
+
+
+
+
+
+
+.itemsArea {
+ width:90%;
+ margin:40px auto;
+}
+
+.itemsHeading{
+ text-align:center;
+ font-size:28px;
+ margin-bottom:25px;
+ color:#0d224c;
+ font-weight:bold;
+}
+
+.itemsGrid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+ gap:30px;
+}
+
+.oneItem{
+ background:white;
+ border-radius:18px;
+ padding:15px;
+ text-align:center;
+ box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+.oneItem img{
+ width:100%;
+ border-radius:15px;
+}
+
+.oneItem h3{
+ margin:12px 0;
+ font-size:16px;
+ font-weight:bold;
+ color:#333;
+}
+
+.oneItem button{
+ padding:10px 20px;
+ background-color:#0d224c;
+ color:white;
+ border:none;
+ border-radius:25px;
+ cursor:pointer;
+ margin-top:10px;
+ font-size:14px;
+ font-weight:bold;
+}
+
+.oneItem button:hover{
+ background-color:#091938;
+}
+
+</style>
 </head>
 
 <body>
 
-    <nav>
-        <div class="logo">TimeAura Watches</div>
+<nav>
+ <div class="brandname">TimeAura Watches</div>
+ <ul>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="categories.html">Categories</a></li>
+  <li><a href="topsellers.html">Top Sellers</a></li>
+  <li><a href="login.html">Login</a></li>
+ </ul>
+</nav>
 
-        <ul>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="topsellers.html">Top Sellers</a></li>
-            <li><a href="signup.html">Login</a></li>
-        </ul>
-    </nav>
 
-    
-    <div class="hero">
-    
-        <img src="images/home.jpg" alt="Hero Image">
 
-    
-        <div class="hero-text">
-            <h1>Timeless Elegance, Modern Precision</h1>
-            <p>Discover the finest collection of watches, designed for every moment</p>
 
-        
-            <a href="topsellers.html">Shop Best Sellers</a>
-        </div>
-    </div>
+<div class="heroBox">
 
-  
-<div class="products-section">
+    <img src="home.jpg" alt="Hero Image">
 
-    <h2 class="products-title">Our Featured Watches</h2>
+    <div class="textOnImg">
+        <h1>Timeless Elegance, Modern Precision</h1>
+        <p>Discover the finest collection of watches, designed for every moment</p>
 
-    <div class="products-grid">
-
-        <div class="product-card">
-            <img src="images/watch1.jpg" alt="Women's Luxury Crystal Watch">
-            <h3>Women's Luxury Crystal Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/watch2.jpg" alt="Black Leather Strap Watch">
-            <h3>Black Leather Strap Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/watch3.jpg" alt="Gold Bracelet Watch">
-            <h3>Gold Bracelet Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/watch4.jpg" alt="Women's Oval Dial Watch">
-            <h3>Women's Oval Dial Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/watch5.jpg" alt="Men's Silver Watch">
-            <h3>Men's Silver Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="images/watch6.jpg" alt="Brown Vintage Watch">
-            <h3>Brown Vintage Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-
+        <a href="topsellers.html">Shop Best Sellers</a>
     </div>
 </div>
 
 
-<footer class="main-footer">
-  <div class="footer-content">
-    <div class="footer-section">
+
+
+<div class="itemsArea">
+
+<h2 class="itemsHeading">Our Featured Watches</h2>
+
+<div class="itemsGrid">
+
+ <div class="oneItem">
+  <img src="watch1.jpg" alt="Women's Luxury Crystal Watch">
+  <h3>Women's Luxury Crystal Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+ <div class="oneItem">
+  <img src="watch2.jpg" alt="Black Leather Strap Watch">
+  <h3>Black Leather Strap Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+ <div class="oneItem">
+  <img src="watch3.jpg" alt="Gold Bracelet Watch">
+  <h3>Gold Bracelet Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+ <div class="oneItem">
+  <img src="watch4.jpg" alt="Women's Oval Dial Watch">
+  <h3>Women's Oval Dial Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+ <div class="oneItem">
+  <img src="watch5.jpg" alt="Men's Silver Watch">
+  <h3>Men's Silver Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+ <div class="oneItem">
+  <img src="watch6.jpg" alt="Brown Vintage Watch">
+  <h3>Brown Vintage Watch</h3>
+  <button>Add to Cart</button>
+ </div>
+
+</div>
+
+</div>
+
+
+
+
+
+<footer class="footerArea">
+ <div class="footWrap">
+
+    <div class="footPart">
       <h3>About Us</h3>
-      <p>At TimeAura, we believe a watch is more than an accessory .it’s a statement. We offer a curated collection of stylish, reliable, and affordable timepieces designed for everyday wear. Our goal is to bring modern, high-quality watches to everyone who values both style and precision. We keep things simple: great designs, trusted quality, and customer-first service.</p>
+      <p>At TimeAura, we believe a watch is more than an accessory .it’s a statement. We offer a curated collection of stylish, reliable, and affordable timepieces designed for everyday wear. Our goal is to bring modern, high-quality watches to everyone who values both style and precision.</p>
     </div>
 
-    <div class="footer-section">
+    <div class="footPart">
       <h3>Quick Links</h3>
       <ul>
         <li><a href="#">Home</a></li>
@@ -301,16 +320,15 @@
       </ul>
     </div>
 
-    <div class="footer-section">
+    <div class="footPart">
       <h3>Contact</h3>
-      <p>Email:   timeaura@gmail.com</p>
-      <p>Phone:  +92 333 0000000</p>
+      <p>Email: timeaura@gmail.com</p>
+      <p>Phone: +92 333 0000000</p>
     </div>
-  </div>
 
+ </div>
 </footer>
 
 
 </body>
-
 </html>
