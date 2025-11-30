@@ -1,157 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - TimeAura</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - TimeAura</title>
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; }
+<style>
+ *{margin:0; padding:0; box-sizing:border-box;}
 
-    nav {
-            background-color: #0d224c; 
-            padding: 12px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
+ body{
+    font-family: Arial, sans-serif;
+ }
 
-        nav .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
+ nav{
+    background-color:#0d224c;
+    padding:12px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+ }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
+ nav .logo {
+    font-size:20px;
+    font-weight:bold;
+ }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
+ nav ul{
+    display:flex; list-style:none;
+    gap:20px;
+ }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+ nav ul li a{
+   text-decoration:none;
+   color:white;
+   font-weight:500;
+ }
 
-    .hero {
-      background-image: url('images/login.jpg'); 
-      background-size: cover;
-      background-position: center;
-      height: calc(100vh - 50px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.6);
-      background-blend-mode: lighten;
-    }
+ nav ul li a:hover{
+   text-decoration: underline;
+ }
 
-    .login-box {
-      background-color: white;
-      padding: 30px 40px;
-      border-radius: 8px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+ 
+ .mainbox{
+   background-image:url('login.jpg');
+   background-size:cover;
+   background-position:center;
+   height:calc(100vh - 50px);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   background-color:rgba(255,255,255,.6);
+   background-blend-mode:lighten;
+ }
 
-    .login-box h2 { margin-bottom: 15px; }
-    .login-box input {
-      width: 100%;
-      padding: 8px;
-      margin: 10px 0;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
+ .loginbox{
+   background:white;
+   width:300px;
+   padding:30px 40px;
+   border-radius:8px;
+   text-align:center;
+   box-shadow:0 0 10px rgba(0,0,0,.2);
+ }
 
-    .login-box button {
-      width: 100%;
-      padding: 10px;
-      background-color: #1a2b4c;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+ .loginbox h2{ margin-bottom:15px; }
 
-    .login-box button:hover { background-color: #162243; }
+ .loginbox input{
+    width:100%;
+    padding:8px;
+    margin:10px 0;
+    border-radius:4px;
+    border:1px solid #ccc;
+ }
 
-    .small-link { margin-top: 10px; font-size: 14px; }
-    .small-link a { color: #1a2b4c; text-decoration: none; font-weight: bold; }
-    .error { color: #b00020; font-size: 14px; margin-top: 8px; }
-  </style>
+ .loginbox button{
+    width:100%;
+    padding:10px;
+    background:#1a2b4c;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:bold;
+ }
+
+ .loginbox button:hover{
+    background:#162243;
+ }
+
+ .smalltxt{
+   margin-top:10px;
+   font-size:14px;
+ }
+
+ .smalltxt a{
+   color:#1a2b4c;
+   text-decoration:none;
+   font-weight:bold;
+ }
+
+ .errtxt{
+   color:#b00020;
+   margin-top:8px;
+   font-size:14px;
+ }
+
+ 
+ .footerbox{
+   background-color:#0d224c;
+   color:white;
+   padding:40px 0;
+   margin-top:40px;
+ }
+
+ .footerwrap{
+   width:85%;
+   margin:auto;
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+ }
+
+ .footarea{
+  width:30%;
+  min-width:200px;
+  margin-bottom:20px;
+ }
+
+ .footarea h3{
+   margin-bottom:15px;
+   font-size:18px;
+ }
+
+ .footarea ul{ list-style:none; padding:0; }
+
+ .footarea ul li{ margin-bottom:8px; }
+
+ .footarea ul li a{
+   text-decoration:none;
+   color:white;
+   transition:.3s;
+ }
+
+ .footarea ul li a:hover{
+   color:#aaa;
+ }
+
+</style>
 </head>
+
 <body>
 
-  <nav>
-        <div class="logo">TimeAura Watches</div>
+<nav>
+ <div class="logo">TimeAura Watches</div>
 
-        <ul>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="topsellers.html">Top Sellers</a></li>
-            <li><a href="signup.html">Login</a></li>
-        </ul>
-    </nav>
+ <ul>
+   <li><a href="cart.html">Cart</a></li>
+   <li><a href="home.html">Home</a></li>
+   <li><a href="categories.html">Categories</a></li>
+   <li><a href="topsellers.html">Top Sellers</a></li>
+   <li><a href="login.html">Login</a></li>
+ </ul>
+</nav>
 
-  <div class="hero">
-    <div class="login-box">
-      <h2>Login</h2>
-      <p>Enter your credentials to access your account</p>
+<div class="mainbox">
 
-      <form id="loginForm">
-        <input id="email" type="email" placeholder="Email" required>
-        <input id="password" type="password" placeholder="Password" required>
-        <div id="error" class="error" aria-live="polite"></div>
-        <button type="submit">Login</button>
-      </form>
+ <div class="loginbox">
+    <h2>Login</h2>
+    <p>Enter your credentials to access your account</p>
 
-      <p class="small-link">
-        Don't have an account?
-        <a href="signup.html">Sign up here</a>
-      </p>
-    </div>
-  </div>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <div id="err" class="errtxt"></div>
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="smalltxt">Don't have an account?
+      <a href="signup.html">Sign up here</a>
+    </p>
+ </div>
+
+</div>
+
 
 <script>
-
-
-function loadUsers() {
-  const raw = localStorage.getItem('myshop_users');
-  if (!raw) return [];
-  try { return JSON.parse(raw); } catch(e) { return []; }
+function getUsers(){
+   let raw = localStorage.getItem("myshop_users")
+   if(!raw) return []
+   try{
+     return JSON.parse(raw)
+   }catch(e){
+     return []
+   }
 }
 
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = document.getElementById('email').value.trim().toLowerCase();
-  const password = document.getElementById('password').value;
-  const err = document.getElementById('error');
-  err.textContent = '';
+document.getElementById("loginForm").addEventListener("submit", function(e){
+   e.preventDefault()
 
-  if (!email || !password) { err.textContent = 'Please enter email and password.'; return; }
+   let email = document.getElementById("email").value.trim().toLowerCase()
+   let pass = document.getElementById("password").value
+   let err = document.getElementById("err")
 
-  const users = loadUsers();
-  const user = users.find(u => u.email === email && u.password === password);
-  if (!user) {
-    err.textContent = 'Invalid email or password.';
-    return;
-  }
+   err.textContent = ""
 
-  
-  localStorage.setItem('currentUser', JSON.stringify({ email: user.email }));
-  alert('Login successful — redirecting to home.');
-  window.location.href = 'home.html'; 
-});
+   if(email=="" || pass==""){
+      err.textContent = "Please enter email and password."
+      return
+   }
+
+   let users = getUsers()
+   let user = users.find(u => u.email===email && u.password===pass)
+
+   if(!user){
+     err.textContent="Invalid email or password."
+     return
+   }
+
+   localStorage.setItem("currentUser", JSON.stringify({email:user.email}))
+
+   alert("Login successful — redirecting to home.")
+   window.location.href="home.html"
+})
 </script>
+
+
+<footer class="footerbox">
+ <div class="footerwrap">
+
+  <div class="footarea">
+    <h3>About Us</h3>
+    <p>At TimeAura, we believe a watch is more than an accessory .it’s a statement. We offer a curated collection of stylish, reliable, and affordable timepieces designed for everyday wear.</p>
+  </div>
+
+  <div class="footarea">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+
+  <div class="footarea">
+    <h3>Contact</h3>
+    <p>Email: timeaura@gmail.com</p>
+    <p>Phone: +92 333 0000000</p>
+  </div>
+
+ </div>
+</footer>
 
 </body>
 </html>
-
